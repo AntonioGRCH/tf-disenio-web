@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/style.css">
+    <script src="/js/scripts.js"></script>
     <title>Klamma</title>
 </head>
 <body>
@@ -37,15 +38,16 @@
     </nav>
     <aside>
         <div class="articulos">
-            <div><img src="/images/imagen1.jpeg" alt=""></div>
-            <div><img src="/images/imagen2.jpeg" alt=""></div>
-            <div><img src="/images/imagen3.jpeg" alt=""></div>
-            <div><img src="/images/imagen4.jpeg" alt=""></div>
-            <div><img src="/images/imagen5.jpeg" alt=""></div>
-            <div><img src="/images/imagen6.jpeg" alt=""></div>
+            <div class="ima-galeria"><img src="/images/imagen1.jpeg" alt=""></div>
+            <div class="ima-galeria"><img src="/images/imagen2.jpeg" alt=""></div>
+            <div class="ima-galeria"><img src="/images/imagen3.jpeg" alt=""></div>
+            <div class="ima-galeria"><img src="/images/imagen4.jpeg" alt=""></div>
+            <div class="ima-galeria"><img src="/images/imagen5.jpeg" alt=""></div>
+            <div class="ima-galeria"><img src="/images/imagen6.jpeg" alt=""></div>
         </div> 
     </aside>
     <article>
+        <div class="pelota"></div>
         <div class="art">
             <h2>Bienvenido</h2>
             <div class="articulo2">
@@ -67,6 +69,34 @@
                 <p>Los artistas también encuentran todos sus materiales en nuestra tienda. Contamos con una gran variedad de colores profesionales, desde acuarelas y pintura acrílica hasta pintura al óleo. Visítanos y encuentra todo tu material artístico a un precio económico.</p>
             </div>
         </div>
+
+        <div class="audio-video">
+            <div class="audio">
+                <div class="col-6">
+                    <div class="audio">
+                        <p class="titulo-audio">Reproducción de audio</p>
+                        <audio id="miaudio" src="/audio/alexander-nakandra.mp3" controls></audio>
+                    </div>
+                    <div class="controles">
+                        <br>
+                        <button onclick="reproducir();">Play</button>
+                        <button onclick="pausar();">Pausa</button>
+                        <button onclick="detener();">Stop</button>
+                        <button onclick="pausarDetener();">Play / Stop</button>
+                    </div>
+                </div>
+
+                <div class="col-7">
+                    <div class="video">
+                        <p class="titulo-video">Video Informativo</p> 
+                        <video src="/video/video.mp4" controls poster="/images/LogoZegelIpae.png" height="200px"></video>
+                    </div>
+                </div>
+            </div>  
+        
+            <div class="pelota"></div>
+        </div>
+
     </article>
 
     <footer>
